@@ -17,7 +17,7 @@ public class KafkaProducerApplication {
         Student student = new Student();
         student.setName("张三");
         student.setAge(12);
-        kafkaProducerService.sendMessage(student);
+        kafkaProducerService.sendMessage();
         LOGGER.info("Start up kafka producer success.");
     }
 }

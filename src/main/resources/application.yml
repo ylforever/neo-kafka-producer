@@ -1,0 +1,24 @@
+server:
+  servlet:
+    context-path: /elon-kafka-producer
+  port: 20000
+  compression:
+    enabled: true
+    mime-types: application/json,application/xml,text/html,text/xml,text/plain
+    min-response-size: 20480
+
+#  ssl:
+#    key-store: keystore.p12
+#    key-store-password: elon123
+#    keyStoreType: PKCS12
+#    keyAlias: springboothttps
+
+neo:
+  kafka:
+    bootstrap:
+      servers: 192.168.5.128:9092
+    group:
+      id: neo1
+    max:
+      poll:
+        records: 1
